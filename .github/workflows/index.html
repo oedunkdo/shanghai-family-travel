@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>上海親子探索 7天6夜全攻略</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px}
+body{background:#fff;color:#1a1a1a;font-family:'Noto Sans TC',sans-serif;line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+:root{
+  --red:#E8374A;--orange:#F4834F;--gold:#C8871A;--teal:#1B8FA8;--purple:#7B5EA7;--green:#2D9E6B;
+  --ink:#1a1a1a;--sub:#555;--muted:#888;--border:#e8e8e8;
+  --bg-soft:#f9f8f6;--r:14px;--sh:0 2px 14px rgba(0,0,0,.07);
+}
+a{color:inherit;text-decoration:none}
+.serif{font-family:'DM Serif Display',serif}
+
+/* ── HERO ── */
+.hero{background:linear-gradient(150deg,#0d1b35 0%,#1a3a5c 45%,#0a2438 100%);padding:52px 20px 44px;text-align:center;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background-image:radial-gradient(1.5px 1.5px at 12% 18%,rgba(255,255,255,.5) 0%,transparent 100%),radial-gradient(1px 1px at 32% 52%,rgba(255,255,255,.35) 0%,transparent 100%),radial-gradient(1.5px 1.5px at 52% 10%,rgba(255,255,255,.55) 0%,transparent 100%),radial-gradient(1px 1px at 72% 28%,rgba(200,220,255,.45) 0%,transparent 100%),radial-gradient(1px 1px at 88% 16%,rgba(255,255,255,.4) 0%,transparent 100%),radial-gradient(1.5px 1.5px at 94% 58%,rgba(255,255,255,.5) 0%,transparent 100%),radial-gradient(1px 1px at 6% 74%,rgba(255,255,255,.35) 0%,transparent 100%),radial-gradient(1px 1px at 58% 82%,rgba(200,220,255,.3) 0%,transparent 100%);pointer-events:none}
+.hero-eye{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#7ecbe8;background:rgba(126,203,232,.12);border:1px solid rgba(126,203,232,.3);padding:5px 14px;border-radius:20px;margin-bottom:18px}
+.hero h1{font-family:'DM Serif Display',serif;font-size:clamp(2rem,8vw,3.2rem);color:#fff;margin-bottom:6px;position:relative;z-index:1}
+.hero-en{font-size:12px;font-weight:500;color:rgba(255,255,255,.4);letter-spacing:.14em;text-transform:uppercase;margin-bottom:16px}
+.hero-sub{font-size:14.5px;color:rgba(255,255,255,.7);max-width:380px;margin:0 auto 24px;line-height:1.8}
+.hero-pills{display:flex;flex-wrap:wrap;gap:7px;justify-content:center;margin-bottom:24px}
+.hero-pill{font-size:12px;font-weight:500;color:rgba(255,255,255,.8);background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);padding:5px 12px;border-radius:20px}
+.hero-btns{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.btn{display:inline-block;font-size:13px;font-weight:700;padding:11px 24px;border-radius:50px;cursor:pointer;border:none;transition:all .2s;font-family:'Noto Sans TC',sans-serif}
+.btn-p{background:var(--red);color:#fff;box-shadow:0 3px 14px rgba(232,55,74,.35)}
+.btn-o{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.4)}
+
+/* cityline divider */
+.city-div{height:60px;overflow:hidden;background:linear-gradient(180deg,#0a2438 0%,#fff 100%)}
+.city-div svg{width:100%;height:100%}
+
+/* ── STICKY NAV ── */
+.nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);display:flex;overflow-x:auto;scrollbar-width:none;padding:0 20px;-webkit-overflow-scrolling:touch}
+.nav::-webkit-scrollbar{display:none}
+.nav a{flex-shrink:0;font-size:12px;font-weight:600;color:var(--muted);padding:13px 13px;border-bottom:2.5px solid transparent;white-space:nowrap;transition:all .2s}
+.nav a:hover,.nav a.on{color:var(--ink);border-bottom-color:var(--red)}
+
+/* ── SECTION ── */
+.sec{padding:36px 0 36px}
+.sec-alt{background:var(--bg-soft)}
+.wrap{max-width:680px;margin:0 auto;padding:0 18px}
+.sec-eye{font-size:10.5px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.sec-h{font-family:'DM Serif Display',serif;font-size:clamp(1.5rem,5vw,1.9rem);color:var(--ink);margin-bottom:8px}
+.sec-d{font-size:13.5px;color:var(--sub);line-height:1.75;max-width:520px}
+hr.div{border:none;height:1px;background:var(--border)}
+
+/* ── TAGS ── */
+.tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:3px 8px;border-radius:20px;white-space:nowrap}
+.t-red{background:#feeced;color:var(--red)}
+.t-teal{background:#e6f4f8;color:var(--teal)}
+.t-gold{background:#fdf3e0;color:var(--gold)}
+.t-purple{background:#f0ecf9;color:var(--purple)}
+.t-green{background:#e5f6ed;color:var(--green)}
+.t-orange{background:#fff0e9;color:var(--orange)}
+.t-free{background:#e8f7ee;color:#1a8a4a;font-size:11px}
+.t-warn{background:#fff4f5;color:var(--red);font-size:11px}
+
+/* ── CALLOUT ── */
+.callout{border-radius:12px;padding:14px 15px;display:flex;gap:11px;align-items:flex-start;font-size:13px;line-height:1.7;margin-top:12px}
+.c-blue{background:#f0f7fa;border:1.5px solid #c5e0ea}
+.c-gold{background:#fdf9f0;border:1.5px solid #e8d5a0}
+.c-red{background:#fff4f5;border:1.5px solid #f5c5c8}
+.c-purple{background:#f5f2fc;border:1.5px solid #d4c8ee}
+.c-icon{font-size:1.2rem;flex-shrink:0;margin-top:1px}
+.c-title{font-weight:700;color:var(--ink);display:block;margin-bottom:2px;font-size:13px}
+.c-body{color:var(--sub)}
+
+/* ── ITIN ── */
+.itin-list{margin-top:20px;display:flex;flex-direction:column;gap:10px}
+.itin-card{display:flex;border-radius:var(--r);overflow:hidden;box-shadow:var(--sh);background:#fff;opacity:0;transform:translateY(10px);transition:opacity .5s,transform .5s}
+.itin-card.vi{opacity:1;transform:translateY(0)}
+.day-col{min-width:52px;width:52px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:14px 4px;flex-shrink:0}
+.day-n{font-family:'DM Serif Display',serif;font-size:1.55rem;line-height:1;font-weight:700}
+.day-l{font-size:8.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-top:2px}
+.itin-body{flex:1;padding:13px 14px;border-left:1px solid var(--border);min-width:0}
+.itin-theme{font-size:13.5px;font-weight:700;color:var(--ink);margin-bottom:3px}
+.itin-acts{font-size:13px;color:var(--sub);line-height:1.65}
+.itin-hl{display:inline-block;margin-top:6px;font-size:11.5px;font-weight:600;padding:3px 9px;border-radius:6px}
+.new-badge{display:inline-flex;align-items:center;font-size:10px;font-weight:700;color:var(--purple);background:#f0ecf9;border-radius:4px;padding:2px 6px;margin-left:6px}
+/* day colours */
+.d1{background:#fef3f0}.d1 .day-n,.d1 .day-l{color:var(--orange)}
+.d2{background:#fff0f4}.d2 .day-n,.d2 .day-l{color:var(--red)}
+.d3{background:#f0f8ff}.d3 .day-n,.d3 .day-l{color:var(--teal)}
+.d4{background:#f5f2fc}.d4 .day-n,.d4 .day-l{color:var(--purple)}
+.d5{background:#fffbf0}.d5 .day-n,.d5 .day-l{color:var(--gold)}
+.d6{background:#f0faf5}.d6 .day-n,.d6 .day-l{color:var(--green)}
+.d7{background:#f8f6ff}.d7 .day-n,.d7 .day-l{color:#8b7fc7}
+.hl-o{background:#fff0e9;color:var(--orange)}
+.hl-r{background:#feeced;color:var(--red)}
+.hl-t{background:#e6f4f8;color:var(--teal)}
+.hl-p{background:#f0ecf9;color:var(--purple)}
+.hl-g{background:#fdf3e0;color:var(--gold)}
+.hl-gr{background:#e8f7ee;color:var(--green)}
+.hl-b{background:#eaf1ff;color:#4070d0}
+
+/* ── FLIGHT ── */
+.r-card{background:#fff;border-radius:var(--r);overflow:hidden;box-shadow:var(--sh);margin-top:12px;opacity:0;transform:translateY(10px);transition:opacity .5s,transform .5s}
+.r-card.vi{opacity:1;transform:translateY(0)}
+.r-head{display:flex;align-items:center;padding:14px 16px;gap:12px;border-bottom:1px solid var(--border);background:var(--bg-soft)}
+.apt{text-align:center}
+.apt-code{font-family:'DM Serif Display',serif;font-size:1.4rem;color:var(--teal)}
+.apt-name{font-size:10px;color:var(--muted);margin-top:1px}
+.f-mid{flex:1;text-align:center}
+.f-line{display:flex;align-items:center;gap:4px;justify-content:center;margin-bottom:3px}
+.f-dot{width:6px;height:6px;border-radius:50%;background:var(--border)}
+.f-dash{flex:1;height:1px;background:var(--border)}
+.f-dur{font-size:11px;color:var(--muted);font-weight:600}
+.r-body{padding:14px 16px}
+.al-row{display:flex;gap:11px;align-items:flex-start;margin-bottom:12px}
+.al-row:last-child{margin-bottom:0}
+.al-name{font-size:13.5px;font-weight:700;color:var(--ink)}
+.al-det{font-size:12.5px;color:var(--sub);margin-top:2px}
+.al-tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:5px}
+/* entry grid */
+.e-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+.e-card{background:#fff;border-radius:12px;padding:13px 13px;box-shadow:var(--sh)}
+.e-icon{font-size:1.3rem;margin-bottom:6px}
+.e-title{font-size:13px;font-weight:700;color:var(--ink);margin-bottom:4px}
+.e-body{font-size:12.5px;color:var(--sub);line-height:1.65}
+/* transfer */
+.tf-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+.tf-card{background:#fff;border-radius:var(--r);overflow:hidden;box-shadow:var(--sh);opacity:0;transform:translateY(10px);transition:opacity .5s,transform .5s}
+.tf-card.vi{opacity:1;transform:translateY(0)}
+.tf-head{padding:11px 13px;border-bottom:1px solid var(--border);background:var(--bg-soft);display:flex;align-items:center;gap:6px}
+.tf-body{padding:12px 13px}
+.mr{display:flex;gap:8px;align-items:flex-start;margin-bottom:10px;font-size:12.5px;color:var(--sub);line-height:1.6}
+.mr:last-child{margin-bottom:0}
+.ml{display:inline-flex;align-items:center;justify-content:center;min-width:22px;height:22px;border-radius:50%;font-size:10px;font-weight:800;color:#fff;flex-shrink:0;margin-top:1px;padding:0 2px}
+.ml2{background:#E03828}.ml10{background:#C9A000}.ml11{background:#800080}.ml16{background:#E95B0C}.ml1{background:#E4006F}.ml9{background:#78BE20}
+.ml-mag{background:linear-gradient(135deg,#1565C0,#00BCD4);border-radius:5px;min-width:30px;height:22px;font-size:8.5px;letter-spacing:0}
+.mr-title{font-weight:700;color:var(--ink)}
+
+/* ── TABS ── */
+.tab-bar{display:flex;gap:7px;padding:18px 18px 0;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.tab-bar::-webkit-scrollbar{display:none}
+.tb{flex-shrink:0;font-size:13px;font-weight:600;padding:8px 16px;border-radius:50px;border:1.5px solid var(--border);background:#fff;color:var(--sub);cursor:pointer;transition:all .2s;white-space:nowrap;font-family:'Noto Sans TC',sans-serif}
+.tb.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.tp{display:none;padding-top:14px}
+.tp.on{display:block;animation:fu .3s ease}
+@keyframes fu{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+/* panel hero */
+.ph{margin:0 18px 14px;border-radius:var(--r);padding:15px 16px;display:flex;gap:11px;align-items:flex-start}
+.ph-icon{font-size:1.9rem;flex-shrink:0}
+.ph-title{font-family:'DM Serif Display',serif;font-size:1.15rem;color:var(--ink);margin-bottom:4px}
+.ph-sub{font-size:13px;color:var(--sub);line-height:1.7}
+/* tri cards */
+.tri{margin:0 18px;display:flex;flex-direction:column;gap:11px}
+.tc{background:#fff;border-radius:var(--r);box-shadow:var(--sh);overflow:hidden}
+.tc-head{padding:10px 15px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:6px;background:var(--bg-soft)}
+.tc-head-lbl{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.tc-body{padding:13px 15px}
+/* transport rows */
+.tr{display:flex;gap:9px;align-items:flex-start;margin-bottom:11px;font-size:13px;line-height:1.65}
+.tr:last-child{margin-bottom:0}
+.tr-title{font-weight:700;color:var(--ink)}
+.tr-body{color:var(--sub);font-size:12.5px}
+/* snacks */
+.sr{display:flex;gap:9px;align-items:flex-start;margin-bottom:11px}
+.sr:last-child{margin-bottom:0}
+.sr-em{font-size:1.25rem;flex-shrink:0}
+.sr-name{font-size:13.5px;font-weight:700;color:var(--ink);margin-bottom:2px}
+.sr-desc{font-size:12.5px;color:var(--sub);line-height:1.6}
+/* tickets */
+.txr{display:flex;gap:9px;align-items:flex-start;padding:10px 12px;border-radius:10px;background:var(--bg-soft);margin-bottom:8px}
+.txr:last-of-type{margin-bottom:0}
+.txr-pl{font-size:13px;font-weight:700;color:var(--ink);margin-bottom:2px}
+.txr-det{font-size:12.5px;color:var(--sub);line-height:1.6}
+.price{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:5px;margin-top:4px;background:#fdf3e0;color:var(--gold)}
+.price.free{background:#e8f7ee;color:var(--green)}
+.price.warn{background:#fff4f5;color:var(--red)}
+/* exhibit grid */
+.ex-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:14px 18px 0}
+.ex-c{background:#fff;border-radius:12px;padding:12px;box-shadow:var(--sh);text-align:center}
+.ex-ic{font-size:1.4rem;margin-bottom:5px}
+.ex-name{font-size:12.5px;font-weight:700;color:var(--ink);margin-bottom:3px}
+.ex-desc{font-size:11.5px;color:var(--sub);line-height:1.55}
+
+/* ── SPOTS CARDS ── */
+.spot-card{background:#fff;border-radius:var(--r);box-shadow:var(--sh);padding:16px;display:flex;gap:13px;align-items:flex-start;margin-top:10px;opacity:0;transform:translateY(10px);transition:opacity .5s,transform .5s}
+.spot-card.vi{opacity:1;transform:translateY(0)}
+.sp-icon{font-size:1.7rem;flex-shrink:0;margin-top:1px}
+.sp-title{font-size:14.5px;font-weight:700;color:var(--ink);margin-bottom:2px}
+.sp-sub{font-size:11px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px}
+.sp-desc{font-size:13px;color:var(--sub);line-height:1.7;margin-bottom:8px}
+.sp-warn{display:flex;gap:7px;align-items:flex-start;background:#fdf9f0;border:1px solid #e8d5a0;border-radius:8px;padding:9px 10px;font-size:12.5px;color:#7a5a1a;line-height:1.6}
+
+/* ── FOOD ── */
+.fq{margin-top:18px;padding:14px 16px;background:#fdf9f0;border-radius:var(--r);border-left:4px solid var(--gold);font-size:14px;color:#5a3e0a;font-style:italic;line-height:1.75}
+.fi{display:flex;gap:12px;align-items:flex-start;background:#fff;border-radius:var(--r);padding:14px;box-shadow:var(--sh);margin-top:10px;opacity:0;transform:translateY(8px);transition:opacity .5s,transform .5s}
+.fi.vi{opacity:1;transform:translateY(0)}
+.fi-em{font-size:1.75rem;flex-shrink:0}
+.fi-name{font-size:14.5px;font-weight:700;color:var(--ink);margin-bottom:2px}
+.fi-sub{font-size:11px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.05em;margin-bottom:5px}
+.fi-desc{font-size:13px;color:var(--sub);line-height:1.65}
+
+/* ── BUDGET ── */
+.bcard{background:#fff;border-radius:var(--r);box-shadow:var(--sh);overflow:hidden;margin-top:10px;opacity:0;transform:translateY(10px);transition:opacity .5s,transform .5s}
+.bcard.vi{opacity:1;transform:translateY(0)}
+.bcard-h{padding:16px 16px 13px;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:flex-end}
+.b-type{font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;margin-bottom:4px}
+.b-price{font-family:'DM Serif Display',serif;font-size:1.9rem;line-height:1}
+.bcard.low .b-price{color:var(--teal)}.bcard.hi .b-price{color:var(--gold)}
+.bcard-b{padding:13px 16px}
+.bb-wrap{margin-bottom:10px}
+.bb-wrap:last-of-type{margin-bottom:0}
+.bb-lbl{display:flex;justify-content:space-between;font-size:12.5px;color:var(--sub);margin-bottom:5px}
+.bb-track{height:6px;background:var(--border);border-radius:3px;overflow:hidden}
+.bb-fill{height:100%;width:0%;border-radius:3px;transition:width 1.2s cubic-bezier(.4,0,.2,1)}
+.bcard.low .bb-fill{background:linear-gradient(to right,var(--teal),#4ECDC4)}
+.bcard.hi  .bb-fill{background:linear-gradient(to right,var(--gold),var(--orange))}
+.b-note{margin-top:11px;font-size:12.5px;color:var(--sub);line-height:1.65}
+
+/* ── CLOSING ── */
+.closing{background:linear-gradient(150deg,#0d1b35,#1a3a5c);padding:52px 20px 48px;text-align:center}
+.cq{font-family:'DM Serif Display',serif;font-size:clamp(1.25rem,5vw,1.8rem);color:#fff;line-height:1.45;max-width:460px;margin:0 auto 14px}
+.cq em{font-style:italic;background:linear-gradient(135deg,#ffd700,#ff9a3c);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.csub{font-size:13.5px;color:rgba(255,255,255,.6);line-height:1.8;margin-bottom:28px;max-width:360px;margin-left:auto;margin-right:auto}
+.c-btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:36px}
+.c-foot{font-size:11px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.2)}
+
+/* ── RESPONSIVE ── */
+@media(min-width:540px){
+  .e-grid{grid-template-columns:repeat(4,1fr)}
+  .tf-grid{grid-template-columns:1fr 1fr}
+  .ex-grid{grid-template-columns:repeat(4,1fr)}
+}
+@media(max-width:380px){
+  .tf-grid{grid-template-columns:1fr}
+  .e-grid{grid-template-columns:1fr 1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero-eye">台灣出發 · 7天6夜 · 2025暑假</div>
+  <h1>上海親子探索之旅</h1>
+  <div class="hero-en">Shanghai Family Adventure</div>
+  <p class="hero-sub">迪士尼奇幻城堡 × 外灘科幻夜景 × 天文館宇宙探索<br>三個世界，一趟旅行，全家的共同記憶。</p>
+  <div class="hero-pills">
+    <span class="hero-pill">🏰 迪士尼</span>
+    <span class="hero-pill">🔭 天文館</span>
+    <span class="hero-pill">🌃 外灘夜景</span>
+    <span class="hero-pill">🧪 科技館</span>
+    <span class="hero-pill">🥟 豫園</span>
+  </div>
+  <div class="hero-btns">
+    <a href="#itin" class="btn btn-p">查看行程</a>
+    <a href="#spots" class="btn btn-o">景點攻略</a>
+  </div>
+</section>
+<div class="city-div">
+  <svg viewBox="0 0 800 60" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg">
+    <rect width="800" height="60" fill="#0a2438"/>
+    <rect x="30" y="18" width="16" height="42" fill="rgba(255,255,255,.13)" rx="1"/>
+    <rect x="54" y="10" width="20" height="50" fill="rgba(255,255,255,.1)" rx="1"/>
+    <rect x="83" y="22" width="14" height="38" fill="rgba(255,255,255,.09)" rx="1"/>
+    <rect x="338" y="4" width="7" height="56" fill="rgba(255,255,255,.15)"/>
+    <circle cx="341" cy="24" r="11" fill="rgba(255,255,255,.1)" stroke="rgba(255,255,255,.2)" stroke-width="1"/>
+    <circle cx="341" cy="12" r="6" fill="rgba(255,255,255,.1)"/>
+    <rect x="366" y="8" width="5" height="52" fill="rgba(255,255,255,.12)"/>
+    <rect x="398" y="18" width="13" height="42" fill="rgba(255,255,255,.1)" rx="1"/>
+    <rect x="650" y="16" width="18" height="44" fill="rgba(255,255,255,.09)" rx="1"/>
+    <rect x="678" y="7" width="14" height="53" fill="rgba(255,255,255,.11)" rx="1"/>
+    <rect x="720" y="20" width="22" height="40" fill="rgba(255,255,255,.09)" rx="1"/>
+    <rect x="755" y="12" width="16" height="48" fill="rgba(255,255,255,.1)" rx="1"/>
+    <rect x="0" y="56" width="800" height="4" fill="#fff"/>
+  </svg>
+</div>
+
+<!-- NAV -->
+<nav class="nav" id="mainnav">
+  <a href="#itin">📅 行程</a>
+  <a href="#flights">✈️ 交通</a>
+  <a href="#spots">🗺️ 景點</a>
+  <a href="#sights">📍 必訪</a>
+  <a href="#food">🥢 美食</a>
+  <a href="#budget">💰 預算</a>
+</nav>
+
+<!-- ITINERARY -->
+<section class="sec" id="itin">
+  <div class="wrap">
+    <div class="sec-eye">Itinerary · 7 Days</div>
+    <h2 class="sec-h">行程精華速覽</h2>
+    <p class="sec-d">七天節奏兼顧「體力消耗」「知性吸收」與「宇宙探索」，讓孩子充實而不疲憊。</p>
+
+    <div class="itin-list" id="itinList">
+      <div class="itin-card d1"><div class="day-col"><div class="day-n">1</div><div class="day-l">Day</div></div><div class="itin-body"><div class="itin-theme">初見魔都</div><div class="itin-acts">抵達飯店 → 外灘碼頭夜遊 → 黃浦江渡輪</div><span class="itin-hl hl-o">✨ 萬國建築群燈光秀</span></div></div>
+      <div class="itin-card d2"><div class="day-col"><div class="day-n">2</div><div class="day-l">Day</div></div><div class="itin-body"><div class="itin-theme">夢幻冒險</div><div class="itin-acts">上海迪士尼樂園全日遊</div><span class="itin-hl hl-r">🎆 點亮奇夢煙火秀 · 創極速光輪</span></div></div>
+      <div class="itin-card d3"><div class="day-col"><div class="day-n">3</div><div class="day-l">Day</div></div><div class="itin-body"><div class="itin-theme">小小科學家</div><div class="itin-acts">上海科技館互動展 + 世紀公園草坪放電</div><span class="itin-hl hl-t">🔬 機器人互動 · 齒輪實驗天堂</span></div></div>
+      <div class="itin-card d4"><div class="day-col"><div class="day-n">4</div><div class="day-l">Day</div></div><div class="itin-body"><div class="itin-theme">宇宙探索者<span class="new-badge">★ 新增</span></div><div class="itin-acts">上海天文館（全球最大）全日深度遊</div><span class="itin-hl hl-p">🔭 球幕影院 · 宇宙飛行模擬 · 隕石觸摸</span></div></div>
+      <div class="itin-card d5"><div class="day-col"><div class="day-n">5</div><div class="day-l">Day</div></div><div class="itin-body"><div class="itin-theme">古今穿梭</div><div class="itin-acts">豫園九曲橋 + 城隍廟美食 + 南京路購物</div><span class="itin-hl hl-g">🥟 超大湯包挑戰 · M&amp;M 旗艦店</span></div></div>
+      <div class="itin-card d6"><div class="day-col"><div class="day-n">6</div><div class="day-l">Day</div></div><div class="itin-body"><div class="itin-theme">文藝魔都</div><div class="itin-acts">武康路法租界漫步 + 新天地 + 田子坊</div><span class="itin-hl hl-gr">📸 梧桐街景 · 法式烘焙 · 咖啡時光</span></div></div>
+      <div class="itin-card d7"><div class="day-col"><div class="day-n">7</div><div class="day-l">Day</div></div><div class="itin-body"><div class="itin-theme">愜意返家</div><div class="itin-acts">悠閒早餐 → 最後伴手禮採購 → 機場</div><span class="itin-hl hl-b">🛍️ 大白兔旗艦店 · 光明鮮乳酪</span></div></div>
+    </div>
+
+    <div class="callout c-purple">
+      <span class="c-icon">🔭</span>
+      <div><span class="c-title">Day 4 特別重點 — 上海天文館</span><span class="c-body">全球建築面積最大天文館，2021年開幕。採<strong>強制預約制</strong>，暑假旺季常在開放後 1 小時售罄，請提前 2 週在官方微信小程式搶票！</span></div>
+    </div>
+  </div>
+</section>
+
+<hr class="div">
+
+<!-- FLIGHTS -->
+<section class="sec sec-alt" id="flights">
+  <div class="wrap">
+    <div class="sec-eye">From Taiwan · 台灣出發</div>
+    <h2 class="sec-h">交通全攻略</h2>
+    <p class="sec-d">直飛選擇多元，進市區方式一次說清楚。</p>
+
+    <!-- Route TPE→PVG -->
+    <div class="r-card">
+      <div class="r-head">
+        <div class="apt"><div class="apt-code">TPE</div><div class="apt-name">桃園機場</div></div>
+        <div class="f-mid"><div class="f-line"><div class="f-dot"></div><div class="f-dash"></div><span style="font-size:14px">✈</span><div class="f-dash"></div><div class="f-dot"></div></div><div class="f-dur">約 2 時 10 分</div></div>
+        <div class="apt"><div class="apt-code">PVG</div><div class="apt-name">浦東機場</div></div>
+      </div>
+      <div class="r-body">
+        <div class="al-row"><span style="font-size:1rem;flex-shrink:0">✈</span><div><div class="al-name">中華航空 China Airlines</div><div class="al-det">班次最密集，每日多班，行李額度寬裕，適合家庭出遊。</div><div class="al-tags"><span class="tag t-teal">直飛</span><span class="tag t-gold">哩程累積</span></div></div></div>
+        <div class="al-row"><span style="font-size:1rem;flex-shrink:0">✈</span><div><div class="al-name">長榮航空 EVA Air</div><div class="al-det">服務品質穩定，Hello Kitty 彩繪機不定期執飛，孩子超喜歡。</div><div class="al-tags"><span class="tag t-teal">直飛</span><span class="tag t-orange">親子友善</span></div></div></div>
+        <div class="al-row"><span style="font-size:1rem;flex-shrink:0">✈</span><div><div class="al-name">台灣虎航 Tigerair Taiwan</div><div class="al-det">低成本首選，票價最實惠，行李需另購，提早訂票搶優惠。</div><div class="al-tags"><span class="tag t-teal">直飛</span><span class="tag t-green">最省荷包</span></div></div></div>
+      </div>
+    </div>
+
+    <!-- Route TSA→SHA -->
+    <div class="r-card">
+      <div class="r-head">
+        <div class="apt"><div class="apt-code" style="font-size:1.2rem">TSA</div><div class="apt-name">松山機場</div></div>
+        <div class="f-mid"><div class="f-line"><div class="f-dot"></div><div class="f-dash"></div><span style="font-size:14px">✈</span><div class="f-dash"></div><div class="f-dot"></div></div><div class="f-dur">約 2 時 00 分</div></div>
+        <div class="apt"><div class="apt-code" style="font-size:1.2rem">SHA</div><div class="apt-name">虹橋機場</div></div>
+      </div>
+      <div class="r-body">
+        <div class="al-row"><span style="font-size:1rem;flex-shrink:0">✈</span><div><div class="al-name">中華 / 長榮 / 中國東方航空</div><div class="al-det">城市對城市黃金航線，省去進機場麻煩，特別適合住台北市區家庭。</div><div class="al-tags"><span class="tag t-teal">直飛</span><span class="tag t-gold">市中心對市中心</span></div></div></div>
+      </div>
+    </div>
+
+    <!-- Entry Tips -->
+    <div style="margin-top:18px">
+      <div class="sec-eye" style="margin-bottom:10px">出入境必備準備</div>
+      <div class="e-grid">
+        <div class="e-card"><div class="e-icon">🛂</div><div class="e-title">台胞證</div><div class="e-body">有效期 5 年，孩子也需辦理，請提前確認效期。</div></div>
+        <div class="e-card"><div class="e-icon">📱</div><div class="e-title">網路 + VPN</div><div class="e-body">購買中國上網 SIM，需 VPN 才能用 Google / Line。</div></div>
+        <div class="e-card"><div class="e-icon">💴</div><div class="e-title">換匯建議</div><div class="e-body">換 ¥1,000–2,000 備用，支付寶可搞定大部分。</div></div>
+        <div class="e-card"><div class="e-icon">🏥</div><div class="e-title">旅遊保險</div><div class="e-body">含醫療的旅遊保險強烈建議，帶孩子出行更需要。</div></div>
+      </div>
+    </div>
+
+    <!-- Airport transfer -->
+    <div style="margin-top:18px">
+      <div class="sec-eye" style="margin-bottom:10px">機場進市區</div>
+      <div class="tf-grid">
+        <div class="tf-card">
+          <div class="tf-head"><span style="font-family:'DM Serif Display',serif;font-size:1rem;color:var(--teal)">PVG</span><span style="font-size:12px;font-weight:600;color:var(--sub)">浦東機場</span></div>
+          <div class="tf-body">
+            <div class="mr"><span class="ml ml-mag">磁浮</span><div><span class="mr-title">磁浮列車（強推！）</span><br>7-8 分鐘、431 km/h，孩子一生難忘，¥50。</div></div>
+            <div class="mr"><span class="ml ml2">2</span><div><span class="mr-title">地鐵 2 號線</span><br>→人民廣場，約 60 分鐘，¥9。</div></div>
+            <div class="mr"><span style="font-size:1rem;flex-shrink:0;margin-top:1px">🚕</span><div><span class="mr-title">計程車 / 滴滴</span><br>約 ¥150–200，40-60 分鐘。</div></div>
+          </div>
+        </div>
+        <div class="tf-card">
+          <div class="tf-head"><span style="font-family:'DM Serif Display',serif;font-size:1rem;color:var(--teal)">SHA</span><span style="font-size:12px;font-weight:600;color:var(--sub)">虹橋機場</span></div>
+          <div class="tf-body">
+            <div class="mr"><span class="ml ml2">2</span><div><span class="mr-title">地鐵 2 號線</span><br>→人民廣場，約 30-35 分鐘，¥6。</div></div>
+            <div class="mr"><span class="ml ml10">10</span><div><span class="mr-title">地鐵 10 號線</span><br>往豫園 / 新天地，約 40 分鐘。</div></div>
+            <div class="mr"><span style="font-size:1rem;flex-shrink:0;margin-top:1px">🚕</span><div><span class="mr-title">計程車 / 滴滴</span><br>約 ¥80–120，20-35 分鐘。</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout c-blue">
+      <span class="c-icon">🚇</span>
+      <div><span class="c-title">支付寶搭地鐵密技</span><span class="c-body">綁定台灣信用卡後，支付寶「出行」小程式掃碼即可搭地鐵，無需另購交通卡。</span></div>
+    </div>
+  </div>
+</section>
+
+<hr class="div">
+
+<!-- SPOT DEEP DIVE -->
+<section class="sec" id="spots">
+  <div class="wrap">
+    <div class="sec-eye">Transport · Snacks · Tickets</div>
+    <h2 class="sec-h">景點完全攻略</h2>
+    <p class="sec-d">點選分頁，查看每個景點的交通、必吃小吃與買票方式。</p>
+  </div>
+
+  <div class="tab-bar" id="spotTabs">
+    <button class="tb on" data-p="p-disney">🏰 迪士尼</button>
+    <button class="tb" data-p="p-planet">🔭 天文館</button>
+    <button class="tb" data-p="p-bund">🌃 外灘</button>
+    <button class="tb" data-p="p-sci">🧪 科技館</button>
+    <button class="tb" data-p="p-yu">🥟 豫園</button>
+    <button class="tb" data-p="p-nj">🛍️ 南京路</button>
+    <button class="tb" data-p="p-wk">📸 武康路</button>
+  </div>
+
+  <!-- DISNEY -->
+  <div class="tp on" id="p-disney">
+    <div class="ph" style="background:#fff5f7;border:1.5px solid #ffd0d8;border-radius:14px;margin:0 18px 14px">
+      <span class="ph-icon">🏰</span>
+      <div><div class="ph-title">上海迪士尼樂園</div><div class="ph-sub">Day 2 全日。全球最新迪士尼，強烈建議提前 App 預約快速通道省排隊時間。</div></div>
+    </div>
+    <div class="tri">
+      <div class="tc">
+        <div class="tc-head"><span>🚇</span><span class="tc-head-lbl">交通方式</span></div>
+        <div class="tc-body">
+          <div class="tr"><span class="ml ml11">11</span><div><span class="tr-title">地鐵 11 號線（最推薦）</span><br><span class="tr-body">終點「迪士尼站」直達門口，約 50 分鐘（人民廣場出發），¥9。</span></div></div>
+          <div class="tr"><span style="font-size:1.1rem;flex-shrink:0;margin-top:1px">🚕</span><div><span class="tr-title">滴滴打車</span><br><span class="tr-body">市區出發約 ¥80–120，45–60 分鐘。看完煙火秀叫車難，建議提早離開。</span></div></div>
+          <div class="callout c-red" style="margin-top:6px"><span class="c-icon">⚠️</span><div><span class="c-body">假日 11 號線極擁擠，建議早 7:30 前出發，或等晚上 9 點後人潮散去。</span></div></div>
+        </div>
+      </div>
+      <div class="tc">
+        <div class="tc-head"><span>🍢</span><span class="tc-head-lbl">周邊必吃小吃</span></div>
+        <div class="tc-body">
+          <div class="sr"><span class="sr-em">🧇</span><div><div class="sr-name">米奇華夫餅</div><div class="sr-desc">米奇造型，搭配糖漿或巧克力，孩子必拍必吃，約 ¥55–70。</div></div></div>
+          <div class="sr"><span class="sr-em">🍗</span><div><div class="sr-name">美食大道火雞腿</div><div class="sr-desc">超大煙燻火雞腿，邊走邊啃超霸氣，約 ¥65，一家人分。</div></div></div>
+          <div class="sr"><span class="sr-em">🍦</span><div><div class="sr-name">城堡前米奇冰淇淋</div><div class="sr-desc">造型可愛好拍，下午人少時排隊購買。</div></div></div>
+          <div class="sr"><span class="sr-em">🥐</span><div><div class="sr-name">迪士尼小鎮（免費入場）</div><div class="sr-desc">樂園旁購物區，餐廳更多且較便宜，適合晚餐選擇。</div></div></div>
+        </div>
+      </div>
+      <div class="tc">
+        <div class="tc-head"><span>🎟️</span><span class="tc-head-lbl">買票方式</span></div>
+        <div class="tc-body">
+          <div class="txr"><span style="font-size:1.2rem">📱</span><div><div class="txr-pl">官方 App（最推薦）</div><div class="txr-det">預購門票、預約 Lightning Lane 快通、查排隊時間，提前安裝。</div><span class="price">¥475–¥769（依日期）</span></div></div>
+          <div class="txr"><span style="font-size:1.2rem">🛍️</span><div><div class="txr-pl">攜程 / 美團 / 飛豬</div><div class="txr-det">偶有小優惠，選「未使用可退」票種。</div><span class="price">偶有優惠 ¥450 起</span></div></div>
+          <div class="txr"><span style="font-size:1.2rem">⚡</span><div><div class="txr-pl">Lightning Lane 快通（旺季必買）</div><div class="txr-det">「加勒比海盜」與「創極速光輪」各買一條，省 1–2 小時。</div><span class="price">每項 ¥80–¥150</span></div></div>
+          <div class="callout c-gold" style="margin-top:6px"><span class="c-icon">💡</span><div><span class="c-body">提前 30 天官網購票，可鎖定低價日期，旺季可省 ¥100 以上。</span></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PLANETARIUM -->
+  <div class="tp" id="p-planet">
+    <div class="ph" style="background:#f5f2fc;border:1.5px solid #d4c8ee;border-radius:14px;margin:0 18px 14px">
+      <span class="ph-icon">🔭</span>
+      <div><div class="ph-title">上海天文館 <span class="tag t-purple" style="font-size:10px;vertical-align:middle">全球最大</span></div><div class="ph-sub">Day 4 全天。2021年開幕，建築面積 38,164㎡，三個球體象徵天體運行，內容極豐富。</div></div>
+    </div>
+    <div style="margin:0 18px 14px">
+      <div class="callout c-red"><span class="c-icon">⚠️</span><div><span class="c-title">超重要提醒</span><span class="c-body">採<strong>強制預約制，現場完全無法購票</strong>！暑假旺季常在開放後 1 小時售罄，設好鬧鐘提前 2 週搶票。</span></div></div>
+    </div>
+    <div class="tri">
+      <div class="tc">
+        <div class="tc-head"><span>🚇</span><span class="tc-head-lbl">交通方式</span></div>
+        <div class="tc-body">
+          <div class="tr"><span class="ml ml2">2</span><span style="font-size:11px;color:var(--muted);margin-top:4px;flex-shrink:0">轉</span><span class="ml ml16">16</span><div><span class="tr-title">地鐵 2 號線 → 16 號線</span><br><span class="tr-body">龍陽路換乘 16 號線至「滴水湖站」，全程約 55–65 分鐘，建議 8:30 前出發。</span></div></div>
+          <div class="tr"><span style="font-size:1.1rem;flex-shrink:0;margin-top:1px">🚕</span><div><span class="tr-title">滴滴打車</span><br><span class="tr-body">市中心出發約 ¥60–80，50 分鐘。建議地鐵去、滴滴回。</span></div></div>
+          <div class="callout c-blue" style="margin-top:6px"><span class="c-icon">💡</span><div><span class="c-body">天文館距市區較遠，Day 4 請安排整天，不要與其他市區景點並排。</span></div></div>
+        </div>
+      </div>
+      <div class="tc">
+        <div class="tc-head"><span>🍢</span><span class="tc-head-lbl">周邊必吃小吃</span></div>
+        <div class="tc-body">
+          <div class="sr"><span class="sr-em">🍽️</span><div><div class="sr-name">館內星際主題餐廳</div><div class="sr-desc">宇宙造型餐點，中午直接在館內用餐，省去外出奔波的時間。</div></div></div>
+          <div class="sr"><span class="sr-em">🧋</span><div><div class="sr-name">紀念品店：星球造型零食</div><div class="sr-desc">星球圖案糖果餅乾，孩子最愛的伴手禮，出館前記得逛。</div></div></div>
+          <div class="sr"><span class="sr-em">🍜</span><div><div class="sr-name">滴水湖畔餐廳</div><div class="sr-desc">遊完天文館可至湖畔用晚餐，環境優美，孩子可在湖邊散步。</div></div></div>
+          <div class="sr"><span class="sr-em">🛒</span><div><div class="sr-name">臨港萬達廣場</div><div class="sr-desc">距天文館車程約 10 分鐘，有美食廣場，想補充體力的好去處。</div></div></div>
+        </div>
+      </div>
+      <div class="tc">
+        <div class="tc-head"><span>🎟️</span><span class="tc-head-lbl">買票方式</span></div>
+        <div class="tc-body">
+          <div class="txr"><span style="font-size:1.2rem">📱</span><div><div class="txr-pl">官方微信小程式（唯一途徑）</div><div class="txr-det">強制預約，選好日期與時段。提前 7–14 天開放，第一時間搶！</div><span class="price warn">⚠️ 現場完全無法購票</span><br><span class="price">成人 ¥68 / 兒童 ¥38</span></div></div>
+          <div class="txr"><span style="font-size:1.2rem">🎬</span><div><div class="txr-pl">球幕影院（強烈推薦加購）</div><div class="txr-det">直徑 23 公尺球形螢幕仰望宇宙，每場約 30 分鐘，震撼十足。</div><span class="price">¥40 / 人（另購）</span></div></div>
+          <div class="txr"><span style="font-size:1.2rem">🚀</span><div><div class="txr-pl">宇宙飛行模擬器</div><div class="txr-det">身高 120cm 以上，孩子「開太空船」飛越太陽系，超刺激。</div><span class="price">¥30 / 人（另購）</span></div></div>
+        </div>
+      </div>
+    </div>
+    <div class="ex-grid">
+      <div class="ex-c"><div class="ex-ic">🌍</div><div class="ex-name">宇宙廳</div><div class="ex-desc">從大爆炸到地球誕生的沉浸展廳</div></div>
+      <div class="ex-c"><div class="ex-ic">☀️</div><div class="ex-name">太陽塔</div><div class="ex-desc">正午光環奇景，建築本身是天文儀器</div></div>
+      <div class="ex-c"><div class="ex-ic">🪨</div><div class="ex-name">隕石展區</div><div class="ex-desc">親手觸摸真實隕石，感受太空的石頭</div></div>
+      <div class="ex-c"><div class="ex-ic">🔭</div><div class="ex-name">天文觀測台</div><div class="ex-desc">觀測太陽黑子，現場天文學家講解</div></div>
+    </div>
+  </div>
+
+  <!-- BUND -->
+  <div class="tp" id="p-bund">
+    <div class="ph" style="background:#f0f7fa;border:1.5px solid #c5e0ea;border-radius:14px;margin:0 18px 14px">
+      <span class="ph-icon">🌃</span>
+      <div><div class="ph-title">外灘</div><div class="ph-sub">Day 1 晚上。百年萬國建築群倒映黃浦江，觀景台全程免費，日落後 30 分鐘為最佳時段。</div></div>
+    </div>
+    <div class="tri">
+      <div class="tc"><div class="tc-head"><span>🚇</span><span class="tc-head-lbl">交通方式</span></div><div class="tc-body">
+        <div class="tr"><span class="ml ml2">2</span><div><span class="tr-title">地鐵 2 號線「南京東路站」</span><br><span class="tr-body">出站步行 10 分鐘抵外灘，或到「陸家嘴站」從對岸看，角度更壯觀。</span></div></div>
+        <div class="tr"><span style="font-size:1.1rem;flex-shrink:0;margin-top:1px">⛵</span><div><span class="tr-title">黃浦江渡輪（孩子最愛）</span><br><span class="tr-body">外灘↔東方明珠，單程 ¥2，夜晚搭乘雙岸夜景盡收眼底。</span></div></div>
+      </div></div>
+      <div class="tc"><div class="tc-head"><span>🍢</span><span class="tc-head-lbl">周邊必吃小吃</span></div><div class="tc-body">
+        <div class="sr"><span class="sr-em">🥮</span><div><div class="sr-name">光明邨：蝴蝶酥</div><div class="sr-desc">外灘旁 5 分鐘，百年老品牌，奶油酥皮入口即化。</div></div></div>
+        <div class="sr"><span class="sr-em">🍮</span><div><div class="sr-name">杏花樓：現烤鮮肉月餅</div><div class="sr-desc">老字號，咬下肉汁四溢，大人孩子都愛。</div></div></div>
+        <div class="sr"><span class="sr-em">🧋</span><div><div class="sr-name">喜茶 / 奈雪旗艦店</div><div class="sr-desc">外灘旁網紅飲品，看夜景同時人手一杯。</div></div></div>
+        <div class="sr"><span class="sr-em">🍡</span><div><div class="sr-name">城隍廟夜市（步行可達）</div><div class="sr-desc">糖葫蘆、烤串、臭豆腐，晚上特別熱鬧。</div></div></div>
+      </div></div>
+      <div class="tc"><div class="tc-head"><span>🎟️</span><span class="tc-head-lbl">買票方式</span></div><div class="tc-body">
+        <div class="txr"><span style="font-size:1.2rem">🆓</span><div><div class="txr-pl">外灘觀景台：完全免費</div><div class="txr-det">濱江步道全段免費開放，無需預約。</div><span class="price free">免費</span></div></div>
+        <div class="txr"><span style="font-size:1.2rem">🏙️</span><div><div class="txr-pl">東方明珠觀光廳：美團預購</div><div class="txr-det">美團提前購有折扣。</div><span class="price">¥100–¥180</span></div></div>
+        <div class="txr"><span style="font-size:1.2rem">⛵</span><div><div class="txr-pl">黃浦江渡輪：支付寶掃碼</div><div class="txr-det">10-15 分鐘一班，隨到隨搭。</div><span class="price">¥2 / 人</span></div></div>
+      </div></div>
+    </div>
+  </div>
+
+  <!-- SCIENCE -->
+  <div class="tp" id="p-sci">
+    <div class="ph" style="background:#f0f8ff;border:1.5px solid #b8d8ea;border-radius:14px;margin:0 18px 14px">
+      <span class="ph-icon">🧪</span>
+      <div><div class="ph-title">上海科技館</div><div class="ph-sub">Day 3 上午。互動天堂！機器人、齒輪、實驗按鈕，孩子一進去走不動。通常週一休館。</div></div>
+    </div>
+    <div class="tri">
+      <div class="tc"><div class="tc-head"><span>🚇</span><span class="tc-head-lbl">交通方式</span></div><div class="tc-body">
+        <div class="tr"><span class="ml ml2">2</span><div><span class="tr-title">地鐵 2 號線「上海科技館站」</span><br><span class="tr-body">站名就是「上海科技館站」，出站即抵，人民廣場出發約 20 分鐘。</span></div></div>
+        <div class="tr"><span style="font-size:1.1rem;flex-shrink:0;margin-top:1px">🌿</span><div><span class="tr-title">科技館 → 世紀公園</span><br><span class="tr-body">步行 10 分鐘或地鐵一站，兩景點安排同天最佳。</span></div></div>
+      </div></div>
+      <div class="tc"><div class="tc-head"><span>🍢</span><span class="tc-head-lbl">周邊必吃小吃</span></div><div class="tc-body">
+        <div class="sr"><span class="sr-em">🥩</span><div><div class="sr-name">正大廣場 B1 美食廣場</div><div class="sr-desc">科技館旁大型商場，上海本幫菜、台灣小吃，孩子挑食也沒問題。</div></div></div>
+        <div class="sr"><span class="sr-em">🧆</span><div><div class="sr-name">世紀公園門口：糯米粢飯糰</div><div class="sr-desc">上海早餐代表！糯米裹油條、榨菜、肉鬆，一顆 ¥12–18，非常扎實。</div></div></div>
+        <div class="sr"><span class="sr-em">🍵</span><div><div class="sr-name">世紀公園草坪野餐</div><div class="sr-desc">超市買零食，坐草坪上吃，孩子放電同時享受親子時光。</div></div></div>
+      </div></div>
+      <div class="tc"><div class="tc-head"><span>🎟️</span><span class="tc-head-lbl">買票方式</span></div><div class="tc-body">
+        <div class="txr"><span style="font-size:1.2rem">📱</span><div><div class="txr-pl">官方微信小程式（必備）</div><div class="txr-det">提前預約時段，旺季現場常無票，一定要提前訂。</div><span class="price">成人 ¥60 / 兒童 ¥45</span></div></div>
+        <div class="txr"><span style="font-size:1.2rem">📅</span><div><div class="txr-pl">⚠️ 閉館日注意</div><div class="txr-det">通常週一休館，出發前官網確認，以免白跑。</div><span class="price warn">週一通常休館</span></div></div>
+      </div></div>
+    </div>
+  </div>
+
+  <!-- YUYUAN -->
+  <div class="tp" id="p-yu">
+    <div class="ph" style="background:#fffbf0;border:1.5px solid #e8d5a0;border-radius:14px;margin:0 18px 14px">
+      <span class="ph-icon">🥟</span>
+      <div><div class="ph-title">豫園 · 城隍廟</div><div class="ph-sub">Day 5 上午。古典江南園林 + 城隍廟美食街，挑戰吸管吃小籠包，氛圍感超強。</div></div>
+    </div>
+    <div class="tri">
+      <div class="tc"><div class="tc-head"><span>🚇</span><span class="tc-head-lbl">交通方式</span></div><div class="tc-body">
+        <div class="tr"><span class="ml ml10">10</span><div><span class="tr-title">地鐵 10 號線「豫園站」</span><br><span class="tr-body">出 1 號出口步行 5 分鐘抵城隍廟，最直接的方式。</span></div></div>
+        <div class="tr"><span style="font-size:1.1rem;flex-shrink:0;margin-top:1px">🚶</span><div><span class="tr-title">外灘 → 豫園步行</span><br><span class="tr-body">步行約 15-20 分鐘，穿過老街區，感受老上海氛圍。</span></div></div>
+      </div></div>
+      <div class="tc"><div class="tc-head"><span>🍢</span><span class="tc-head-lbl">周邊必吃小吃</span></div><div class="tc-body">
+        <div class="sr"><span class="sr-em">🥟</span><div><div class="sr-name">南翔小籠包（城隍廟店）</div><div class="sr-desc">百年老字號，皮薄湯多，一籠約 ¥58–68。挑戰用吸管喝湯汁！</div></div></div>
+        <div class="sr"><span class="sr-em">🍡</span><div><div class="sr-name">糖葫蘆 / 棉花糖</div><div class="sr-desc">城隍廟街道到處都有，孩子一進去走不動。</div></div></div>
+        <div class="sr"><span class="sr-em">🫕</span><div><div class="sr-name">松月樓：四喜烤麩</div><div class="sr-desc">上海傳統冷菜，甜鹹適中，孩子意外喜歡。</div></div></div>
+      </div></div>
+      <div class="tc"><div class="tc-head"><span>🎟️</span><span class="tc-head-lbl">買票方式</span></div><div class="tc-body">
+        <div class="txr"><span style="font-size:1.2rem">🆓</span><div><div class="txr-pl">城隍廟街區：免費逛</div><div class="txr-det">外圍街道、九曲橋周邊均免費，只有園林本體需票。</div><span class="price free">街區免費</span></div></div>
+        <div class="txr"><span style="font-size:1.2rem">🏯</span><div><div class="txr-pl">豫園園林：美團 / 官網</div><div class="txr-det">美團偶有小優惠，參觀約 1–1.5 小時。</div><span class="price">成人 ¥40 / 兒童 ¥20</span></div></div>
+      </div></div>
+    </div>
+  </div>
+
+  <!-- NANJING -->
+  <div class="tp" id="p-nj">
+    <div class="ph" style="background:#fff5e9;border:1.5px solid #f0d0a0;border-radius:14px;margin:0 18px 14px">
+      <span class="ph-icon">🛍️</span>
+      <div><div class="ph-title">南京路步行街</div><div class="ph-sub">Day 5 下午。全免費逛街，M&amp;M 旗艦店、樂高旗艦店是孩子的天堂，觀光電車也很好拍。</div></div>
+    </div>
+    <div class="tri">
+      <div class="tc"><div class="tc-head"><span>🚇</span><span class="tc-head-lbl">交通方式</span></div><div class="tc-body">
+        <div class="tr"><span class="ml ml2">2</span><div><span class="tr-title">地鐵 2 號線「南京東路站」</span><br><span class="tr-body">出站即步行街東段，向西一路逛到人民廣場。</span></div></div>
+        <div class="tr"><span style="font-size:1.1rem;flex-shrink:0;margin-top:1px">🚃</span><div><span class="tr-title">觀光有軌電車</span><br><span class="tr-body">沿路來回的復古電車，¥2，孩子很喜歡坐。</span></div></div>
+      </div></div>
+      <div class="tc"><div class="tc-head"><span>🍢</span><span class="tc-head-lbl">周邊必吃小吃</span></div><div class="tc-body">
+        <div class="sr"><span class="sr-em">🧁</span><div><div class="sr-name">哈爾濱食品廠：蝴蝶酥</div><div class="sr-desc">奶油層次分明，南京路必買邊走邊吃零食。</div></div></div>
+        <div class="sr"><span class="sr-em">🍦</span><div><div class="sr-name">光明乳業：鮮奶冰淇淋</div><div class="sr-desc">純乳冰淇淋口感扎實，炎熱夏天的救星，¥15–25。</div></div></div>
+        <div class="sr"><span class="sr-em">🍫</span><div><div class="sr-name">M&amp;M 旗艦店</div><div class="sr-desc">可客製巧克力顏色，孩子進去會出不來，預算要抓高！</div></div></div>
+      </div></div>
+      <div class="tc"><div class="tc-head"><span>🎟️</span><span class="tc-head-lbl">買票方式</span></div><div class="tc-body">
+        <div class="txr"><span style="font-size:1.2rem">🆓</span><div><div class="txr-pl">南京路步行街：完全免費</div><div class="txr-det">整條步行街免費開放，各大商場隨意進出，無需預約。</div><span class="price free">免費</span></div></div>
+        <div class="txr"><span style="font-size:1.2rem">🚃</span><div><div class="txr-pl">觀光電車：支付寶掃碼</div><div class="txr-det">在電車站掃碼付費即上車。</div><span class="price">¥2 / 人</span></div></div>
+      </div></div>
+    </div>
+  </div>
+
+  <!-- WUKANG -->
+  <div class="tp" id="p-wk">
+    <div class="ph" style="background:#f0faf5;border:1.5px solid #a8dcc0;border-radius:14px;margin:0 18px 14px">
+      <span class="ph-icon">📸</span>
+      <div><div class="ph-title">武康路 · 法租界</div><div class="ph-sub">Day 6。上海最美法租界梧桐大道，武康大樓是 IG 超熱門打卡點，週末請避開下午人潮。</div></div>
+    </div>
+    <div class="tri">
+      <div class="tc"><div class="tc-head"><span>🚇</span><span class="tc-head-lbl">交通方式</span></div><div class="tc-body">
+        <div class="tr"><span class="ml ml1">1</span><div><span class="tr-title">地鐵 1 號線「衡山路站」</span><br><span class="tr-body">出站步行約 8 分鐘至武康路，沿途有大量咖啡館。</span></div></div>
+        <div class="tr"><span style="font-size:1.1rem;flex-shrink:0;margin-top:1px">🚲</span><div><span class="tr-title">共享單車（最有情調）</span><br><span class="tr-body">掃美團 / 哈囉單車，梧桐樹下騎車是最上海的體驗。</span></div></div>
+      </div></div>
+      <div class="tc"><div class="tc-head"><span>🍢</span><span class="tc-head-lbl">周邊必吃小吃</span></div><div class="tc-body">
+        <div class="sr"><span class="sr-em">☕</span><div><div class="sr-name">永康路「咖啡一條街」</div><div class="sr-desc">距武康路步行 5 分鐘，坐騎樓下喝咖啡，孩子喝牛奶，慢活上海。</div></div></div>
+        <div class="sr"><span class="sr-em">🥐</span><div><div class="sr-name">法式烘焙坊</div><div class="sr-desc">可頌、法棍、檸檬塔，沿途多家，早上來最新鮮。</div></div></div>
+        <div class="sr"><span class="sr-em">🧆</span><div><div class="sr-name">武康大樓旁：鮮豆漿 + 油條</div><div class="sr-desc">早上限定老攤，一杯豆漿 ¥5，最道地的上海早餐。</div></div></div>
+      </div></div>
+      <div class="tc"><div class="tc-head"><span>🎟️</span><span class="tc-head-lbl">買票方式</span></div><div class="tc-body">
+        <div class="txr"><span style="font-size:1.2rem">🆓</span><div><div class="txr-pl">武康路全段：完全免費</div><div class="txr-det">開放式街道，任何時間免費漫步，武康大樓外觀免費拍照。</div><span class="price free">免費</span></div></div>
+        <div class="txr"><span style="font-size:1.2rem">🚲</span><div><div class="txr-pl">共享單車：支付寶掃碼</div><div class="txr-det">美團或哈囉單車，前 15 分鐘 ¥1.5。</div><span class="price">¥1.5 / 15 分鐘</span></div></div>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<hr class="div">
+
+<!-- MUST-VISIT SPOTS CARDS -->
+<section class="sec sec-alt" id="sights">
+  <div class="wrap">
+    <div class="sec-eye">Must Visit · 不可錯過</div>
+    <h2 class="sec-h">親子必訪景點</h2>
+    <div id="spotList">
+      <div class="spot-card"><span class="sp-icon">🏰</span><div class="sp-right"><div class="sp-title">上海迪士尼樂園</div><div class="sp-sub">Day 2 · Shanghai Disneyland</div><div class="sp-desc">全球最新迪士尼，每一個轉角都是驚喜。加勒比海盜聲光效果全球頂尖，晚上煙火秀更是記憶亮點。</div><div class="sp-warn"><span class="sp-warn-icon">💡</span>提前下載官方 App 預約 Lightning Lane，少排隊至少 90 分鐘。</div></div></div>
+      <div class="spot-card"><span class="sp-icon">🔭</span><div class="sp-right"><div class="sp-title">上海天文館</div><div class="sp-sub">Day 4 · 全球最大天文館</div><div class="sp-desc">2021 年開幕，全球建築面積最大天文館。球幕影院、真實隕石觸摸、太陽觀測台，帶孩子感受宇宙的尺度。</div><div class="sp-warn"><span class="sp-warn-icon">⚠️</span>強制預約制，現場無法購票！暑假需提前 2 週在官方微信小程式搶票。</div></div></div>
+      <div class="spot-card"><span class="sp-icon">🧪</span><div class="sp-right"><div class="sp-title">上海科技館</div><div class="sp-sub">Day 3 · Science Museum</div><div class="sp-desc">充滿按鈕、齒輪與機器人的互動天堂，孩子可以親手操作實驗，比任何課本都生動有趣。</div><div class="sp-warn"><span class="sp-warn-icon">💡</span>通常週一閉館，前往前確認，並提前官方微信小程式預約門票。</div></div></div>
+      <div class="spot-card"><span class="sp-icon">🌃</span><div class="sp-right"><div class="sp-title">外灘夜景</div><div class="sp-sub">Day 1 · The Bund</div><div class="sp-desc">百年萬國建築群倒映黃浦江上，霓虹光影與東方明珠交織，是孩子對「大都市」的第一震撼印象。</div><div class="sp-warn"><span class="sp-warn-icon">💡</span>黃金時段：日落後 30 分鐘燈光全亮。渡輪過江 ¥2，孩子超愛的「水上冒險」。</div></div></div>
+      <div class="spot-card"><span class="sp-icon">🥟</span><div class="sp-right"><div class="sp-title">豫園 · 城隍廟</div><div class="sp-sub">Day 5 · Yu Garden</div><div class="sp-desc">古典江南園林與城隍廟美食街並存。讓孩子穿漢服拍照、挑戰吸管吃超大湯包，充滿古風氛圍。</div><div class="sp-warn"><span class="sp-warn-icon">💡</span>城隍廟街區免費逛，進豫園園林本體才需購票（成人 ¥40）。</div></div></div>
+      <div class="spot-card"><span class="sp-icon">📸</span><div class="sp-right"><div class="sp-title">武康路 · 田子坊</div><div class="sp-sub">Day 6 · French Concession</div><div class="sp-desc">法租界最美梧桐大道 + 石庫門創意市集，法式建築、咖啡館、獨立書店混搭，感受「上海腔調」的最後一天。</div><div class="sp-warn"><span class="sp-warn-icon">💡</span>武康大樓轉角是 IG 熱點，週平日早上來最好，人少又好拍。</div></div></div>
+    </div>
+  </div>
+</section>
+
+<hr class="div">
+
+<!-- FOOD -->
+<section class="sec" id="food">
+  <div class="wrap">
+    <div class="sec-eye">Local Flavors · 舌尖上的上海</div>
+    <h2 class="sec-h">孩子也愛的美味</h2>
+    <div class="fq">「上海菜偏甜，非常符合小朋友的胃口！五天吃下來，孩子一定吵著要再回來。」</div>
+    <div id="foodList">
+      <div class="fi"><span class="fi-em">🥟</span><div><div class="fi-name">佳家湯包</div><div class="fi-sub">老字號 · 人民廣場附近</div><div class="fi-desc">皮薄透明，咬開是一口濃郁鮮肉湯汁。上海最著名的湯包老字號，排隊但值得。</div></div></div>
+      <div class="fi"><span class="fi-em">🥘</span><div><div class="fi-name">小楊生煎</div><div class="fi-sub">連鎖店 · 全市皆有</div><div class="fi-desc">底部煎得金黃酥脆，口感層次分明，上海街頭最常見的排隊美食，孩子一口接一口。</div></div></div>
+      <div class="fi"><span class="fi-em">🍬</span><div><div class="fi-name">大白兔奶糖旗艦店</div><div class="fi-sub">南京路 · 伴手禮首選</div><div class="fi-desc">上海老品牌重新復活，旗艦店販售各種口味周邊，帶孩子去挑選，是最棒的伴手禮。</div></div></div>
+      <div class="fi"><span class="fi-em">🥮</span><div><div class="fi-name">蝴蝶酥 + 薩其馬</div><div class="fi-sub">哈爾濱食品廠 · 南京路</div><div class="fi-desc">蝴蝶酥奶油層次分明，薩其馬甜而不膩，邊走邊吃是南京路最具代表性的零食體驗。</div></div></div>
+      <div class="fi"><span class="fi-em">🍦</span><div><div class="fi-name">光明乳業：鮮奶冰淇淋</div><div class="fi-sub">南京路旗艦店 · 夏天必吃</div><div class="fi-desc">上海本地牛奶品牌，純乳冰淇淋口感扎實清爽，¥15–25，炎熱夏天的救星。</div></div></div>
+      <div class="fi"><span class="fi-em">🥐</span><div><div class="fi-name">武康路法式烘焙 + 永康路咖啡</div><div class="fi-sub">法租界 · Day 6</div><div class="fi-desc">可頌、法棍加精品咖啡，坐在梧桐樹下慢慢吃，是最「上海腔調」的早餐體驗。</div></div></div>
+    </div>
+  </div>
+</section>
+
+<hr class="div">
+
+<!-- BUDGET -->
+<section class="sec sec-alt" id="budget">
+  <div class="wrap">
+    <div class="sec-eye">Budget · 預算參考</div>
+    <h2 class="sec-h">每人費用估算（台幣）</h2>
+    <p class="sec-d">以下為每人參考費用，一家三口約乘以 3，不含國際機票。</p>
+    <div id="budgetList">
+      <div class="bcard low">
+        <div class="bcard-h"><div><div class="b-type">小資型方案</div><div class="b-price">NT$22,000</div></div><span class="tag t-teal">推薦</span></div>
+        <div class="bcard-b">
+          <div class="bb-wrap"><div class="bb-lbl"><span>機票 + 連鎖商旅</span><span>50%</span></div><div class="bb-track"><div class="bb-fill" data-w="50"></div></div></div>
+          <div class="bb-wrap"><div class="bb-lbl"><span>迪士尼門票</span><span>25%</span></div><div class="bb-track"><div class="bb-fill" data-w="25"></div></div></div>
+          <div class="bb-wrap"><div class="bb-lbl"><span>餐飲 + 地鐵</span><span>15%</span></div><div class="bb-track"><div class="bb-fill" data-w="15"></div></div></div>
+          <div class="bb-wrap"><div class="bb-lbl"><span>景點 + 購物</span><span>10%</span></div><div class="bb-track"><div class="bb-fill" data-w="10"></div></div></div>
+          <div class="b-note">入住連鎖商旅（漢庭、如家）、避開連假出發。一家三口總計約 NT$66,000 完成整趟旅行。</div>
+        </div>
+      </div>
+      <div class="bcard hi">
+        <div class="bcard-h"><div><div class="b-type">豪華升級方案</div><div class="b-price">NT$38,000<span style="font-size:.9rem">+</span></div></div><span class="tag t-gold">升級</span></div>
+        <div class="bcard-b">
+          <div class="bb-wrap"><div class="bb-lbl"><span>機票 + 五星飯店</span><span>55%</span></div><div class="bb-track"><div class="bb-fill" data-w="55"></div></div></div>
+          <div class="bb-wrap"><div class="bb-lbl"><span>迪士尼尊享卡</span><span>20%</span></div><div class="bb-track"><div class="bb-fill" data-w="20"></div></div></div>
+          <div class="bb-wrap"><div class="bb-lbl"><span>精緻餐飲</span><span>15%</span></div><div class="bb-track"><div class="bb-fill" data-w="15"></div></div></div>
+          <div class="bb-wrap"><div class="bb-lbl"><span>購物 + 體驗</span><span>10%</span></div><div class="bb-track"><div class="bb-fill" data-w="10"></div></div></div>
+          <div class="b-note">入住陸家嘴江景五星 + 迪士尼 Lightning Lane 尊享，減少等待時間，體驗質感大幅提升。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CLOSING -->
+<section class="closing">
+  <div class="wrap" style="text-align:center">
+    <div class="cq">「這個年紀的孩子，<em>每一次出走</em><br>都是世界觀的擴張。」</div>
+    <p class="csub">上海有百年外灘的歷史厚度、世界級樂園的現代感，還有讓孩子仰望宇宙的天文館。<br>這不只是旅行，更是孩子的<strong style="color:#ffd700">世界初體驗</strong>。</p>
+    <div class="c-btns">
+      <a href="#top" class="btn btn-p">回到頂部</a>
+      <a href="#itin" class="btn btn-o">重看行程</a>
+    </div>
+    <div class="c-foot">Shanghai Family Travel Guide · 7 Days 6 Nights · 2025</div>
+  </div>
+</section>
+
+<script>
+// Fade-in observer
+const io = new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      const siblings=[...e.target.parentElement.children];
+      const idx=siblings.indexOf(e.target);
+      setTimeout(()=>e.target.classList.add('vi'),idx*70);
+    }
+  });
+},{threshold:.08});
+document.querySelectorAll('.itin-card,.r-card,.tf-card,.spot-card,.fi,.bcard').forEach(el=>io.observe(el));
+
+// Budget bars
+const bObs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting) e.target.querySelectorAll('.bb-fill').forEach(b=>setTimeout(()=>b.style.width=b.dataset.w+'%',200));
+  });
+},{threshold:.3});
+document.querySelectorAll('.bcard').forEach(c=>bObs.observe(c));
+
+// Tabs
+document.querySelectorAll('.tb').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('.tb').forEach(b=>b.classList.remove('on'));
+    document.querySelectorAll('.tp').forEach(p=>p.classList.remove('on'));
+    btn.classList.add('on');
+    document.getElementById(btn.dataset.p).classList.add('on');
+  });
+});
+
+// Nav active
+const navLinks=document.querySelectorAll('.nav a[href^="#"]');
+const secs=[...navLinks].map(a=>document.querySelector(a.getAttribute('href'))).filter(Boolean);
+window.addEventListener('scroll',()=>{
+  let cur='';
+  secs.forEach(s=>{if(window.scrollY>=s.offsetTop-80)cur='#'+s.id});
+  navLinks.forEach(a=>a.classList.toggle('on',a.getAttribute('href')===cur));
+},{passive:true});
+
+// Smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',e=>{
+    e.preventDefault();
+    const t=document.querySelector(a.getAttribute('href'));
+    if(t)t.scrollIntoView({behavior:'smooth',block:'start'});
+  });
+});
+</script>
+</body>
+</html>
